@@ -12,3 +12,9 @@ python3 -m pip install argcomplete catkin_pkg colcon-common-extensions coverage 
 curl -o ./macos-humble.tar.gz -LO https://github.com/jbrhm/MACOS-HUMBLE/archive/refs/tags/v1.0.1.tar.gz 
 tar -xzvf macos-humble.tar.gz --strip-components=1 
 colcon build --symlink-install --packages-skip-by-dep python_qt_binding
+cd
+mkdir -p ros2_ws/src
+git clone git@github.com:umrover/mrover-ros2 ros2_ws/src/mrover
+mrover
+git submodule update --init
+./scripts/build_dawn.sh

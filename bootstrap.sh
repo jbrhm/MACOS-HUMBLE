@@ -1,7 +1,7 @@
 echo "source ~/.ros2rc" >> ~/.zshrc
-url -o ~/.ros2rc -LO https://github.com/jbrhm/MACOS-HUMBLE/archive/refs/tags/v1.0.1.tar.gz
-
+url -o ~/.ros2rc -LO https://raw.githubusercontent.com/jbrhm/MACOS-HUMBLE/refs/heads/main/.ros2rc
 brew install cmake cppcheck eigen pcre poco python3 tinyxml wget asio tinyxml2 opencv log4cxx qt@5 freetype assimp python@3.10 bullet ninja git git-lfs glfw
+source ~/.zshrc
 git lfs install
 mkdir -p ros2_humble
 cd ros2_humble

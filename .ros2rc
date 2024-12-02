@@ -1,0 +1,39 @@
+export OPENSSL_ROOT_DIR=/opt/homebrew/opt/openssl@3
+
+export PATH=$PATH:$(brew --prefix qt@5)/bin
+
+export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:$(brew --prefix qt@5)
+
+export PATH=/opt/homebrew/opt/qt@5/bin:$PATH
+
+export PATH=$PATH:$(brew --prefix spdlog)/bin
+
+export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:$(brew --prefix spdlog)
+
+export PATH=$PATH:$(brew --prefix fmt)/bin
+
+export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:$(brew --prefix fmt)
+
+export PATH=$PATH:$(brew --prefix console_bridge)/bin
+
+export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:$(brew --prefix console_bridge)
+
+export PATH=$PATH:$(brew --prefix assimp)/bin
+
+export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:$(brew --prefix assimp)
+
+export PATH=$PATH:$(brew --prefix glfw)/bin
+
+export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:$(brew --prefix glfw)
+
+export PATH=$PATH:$(brew --prefix eigen)/bin
+
+export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:$(brew --prefix eigen)
+
+export PATH=$PATH:$(brew --prefix opencv)/bin
+
+export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:$(brew --prefix opencv)
+
+export CMAKE_PREFIX_PATH=$CMAKE_PREFIX_PATH:/opt/homebrew/Cellar/freetype
+
+alias mrover="source ~/ros2_humble/.venv/bin/activate && source ~/ros2_humble/install/setup.zsh && cd ~/ros2_ws/src/mrover && source ~/ros2_ws/install/setup.zsh"

@@ -6,7 +6,7 @@ Slightly altered git repository for building ROS2 humble on mac arm64 chipsets
 1. Disable SIP:
 You must [disable system protection](https://developer.apple.com/documentation/security/disabling-and-enabling-system-integrity-protection)
 
-2. Install xcode
+2. Install [xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 > [!IMPORTANT]  
 > You must have installed xcode (the entire editor not just command line tools)
 

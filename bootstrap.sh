@@ -1,7 +1,10 @@
 echo "source ~/.ros2rc" >> ~/.zshrc
 curl -o ~/.ros2rc -LO https://raw.githubusercontent.com/jbrhm/MACOS-HUMBLE/refs/heads/main/.ros2rc
-brew install qt@5 cmake cppcheck eigen pcre poco python3 tinyxml2 wget asio tinyxml2 opencv log4cxx freetype assimp python@3.10 bullet ninja git git-lfs glfw
-brew uninstall --ignore-dependencies qt
+curl -O https://raw.githubusercontent.com/Homebrew/homebrew-core/b4e46db74e74a8c1650b38b1da222284ce1ec5ce/Formula/c/cmake.rb
+curl -O https://raw.githubusercontent.com/Homebrew/homebrew-core/502489d3a4c1ca0a3854830eb5da2327b6feb54d/Formula/a/asio.rb
+brew install ./asio.rb
+brew install ./cmake.rb
+brew install qt@5 cppcheck eigen pcre poco python3 tinyxml2 wget tinyxml2 opencv log4cxx freetype assimp python@3.10 bullet ninja git git-lfs glfw
 source ~/.zshrc
 git lfs install
 mkdir -p ros2_humble

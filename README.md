@@ -9,6 +9,8 @@ You must [disable system protection](https://developer.apple.com/documentation/s
 2. Install [xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12)
 > [!IMPORTANT]  
 > You must have installed xcode (the entire editor not just command line tools)
+>
+> Make sure to open the installation
 
 3. Install [brew](https://brew.sh)
 

@@ -8,7 +8,7 @@ mkdir -p ros2_humble
 cd ros2_humble
 python3.10 -m venv .venv
 source .venv/bin/activate
-python3 -m pip install argcomplete catkin_pkg colcon-common-extensions coverage empy==3.3.4 flake8 flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes lark-parser mock nose pep8 pydocstyle pyparsing setuptools vcstool numpy
+python3 -m pip install argcomplete catkin_pkg colcon-common-extensions coverage empy==3.3.4 flake8 flake8-blind-except flake8-builtins flake8-class-newline flake8-comprehensions flake8-deprecated flake8-docstrings flake8-import-order flake8-quotes lark-parser mock nose pep8 pydocstyle pyparsing setuptools==75.6.0 vcstool numpy
 curl -o ./macos-humble.tar.gz -LO https://github.com/jbrhm/MACOS-HUMBLE/archive/refs/tags/v1.0.1.tar.gz 
 tar -xzvf macos-humble.tar.gz --strip-components=1 
 colcon build --symlink-install --packages-skip-by-dep python_qt_binding

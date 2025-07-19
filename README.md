@@ -17,3 +17,6 @@ You must [disable system protection](https://developer.apple.com/documentation/s
 4. Run `curl -o ./bootstrap.sh -LO https://raw.githubusercontent.com/jbrhm/MACOS-HUMBLE/refs/heads/main/bootstrap.sh && chmod +x bootstrap.sh &&./bootstrap.sh`
 > [!IMPORTANT]  
 > If you run into the issue `fatal error: 'Availability.h' file not found` run `sudo xcode-select -s /Applications/Xcode.app/Contents/Developer` to switch from command line xcode to developer xcode
+
+5. Run `./build.sh`
+6. Run `ros2 launch mrover simulator.launch.py`

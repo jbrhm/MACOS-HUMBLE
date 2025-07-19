@@ -18,6 +18,6 @@ colcon build --symlink-install --packages-skip-by-dep python_qt_binding
 cd
 mkdir -p ros2_ws/src
 git clone git@github.com:umrover/mrover-ros2 ros2_ws/src/mrover
-mrover
+cd ros2_ws/src/mrover
 git submodule update --init
 ./scripts/build_dawn.sh

@@ -1,3 +1,7 @@
+#!/usr/bin/env
+
+set -euxo pipefail
+
 echo "source ~/.ros2rc" >> ~/.zshrc
 curl -o ~/.ros2rc -LO https://raw.githubusercontent.com/jbrhm/MACOS-HUMBLE/refs/heads/main/.ros2rc
 curl -O https://raw.githubusercontent.com/Homebrew/homebrew-core/b4e46db74e74a8c1650b38b1da222284ce1ec5ce/Formula/c/cmake.rb

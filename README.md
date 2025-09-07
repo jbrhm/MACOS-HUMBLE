@@ -22,3 +22,4 @@ You must [disable system protection](https://developer.apple.com/documentation/s
 
 5. Run `./build.sh`
 6. Run `ros2 launch mrover simulator.launch.py`
+7. Run `echo "source ~/.ros2rc" >> ~/.zshrc`

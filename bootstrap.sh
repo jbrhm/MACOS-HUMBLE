@@ -19,8 +19,10 @@ curl -o ./macos-humble.tar.gz -LO https://github.com/jbrhm/MACOS-HUMBLE/archive/
 tar -xzvf macos-humble.tar.gz --strip-components=1 
 colcon build --symlink-install --packages-skip-by-dep python_qt_binding
 cd
-mkdir -p ros2_ws/src
-git clone git@github.com:umrover/mrover-ros2 ros2_ws/src/mrover
-cd ros2_ws/src/mrover
-git submodule update --init
-./scripts/build_dawn.sh
+if [ ! -d "ros2_ws/src/mrover" ]; then
+  mkdir -p ros2_ws/src
+  git clone git@github.com:umrover/mrover-ros2 ros2_ws/src/mrover
+  cd ros2_ws/src/mrover
+  git submodule update --init
+  ./scripts/build_dawn.sh
+fi

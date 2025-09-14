@@ -16,6 +16,10 @@ brew install /opt/homebrew/Library/Taps/mrover/homebrew-cmake/cmake.rb
 brew install /opt/homebrew/Library/Taps/mrover/homebrew-asio/asio.rb
 
 brew install qt@5 cppcheck eigen pcre poco python3 tinyxml2 wget tinyxml2 opencv log4cxx freetype assimp python@3.10 bullet ninja git git-lfs glfw
+
+brew unlink qt
+brew link qt@5
+
 source ~/.zshrc
 git lfs install
 mkdir -p ros2_humble
